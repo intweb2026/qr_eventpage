@@ -1,0 +1,127 @@
+.delegates-mobile {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0 auto;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.delegates-mobile__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  padding: 0 24px;
+  background: #ffffff;
+}
+
+.delegates-mobile__logo {
+  width: 150px;
+  height: auto;
+}
+
+.delegates-mobile__toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 9.35px;
+  width: 37px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.delegates-mobile__toggle span {
+  display: block;
+  height: 6.9px;
+  width: 100%;
+  background: #278dff;
+}
+
+.delegates-mobile__card {
+  padding: 44px 20px 24px;
+}
+
+.delegates-mobile__title {
+  margin: 0 0 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  text-align: center;
+}
+
+.delegates-mobile__table-wrap {
+  border: 1px solid #262626;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.delegates-mobile__table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.delegates-mobile__table th,
+.delegates-mobile__table td {
+  border: 1px solid #262626;
+}
+
+.delegates-mobile__table th {
+  background: #278dff;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.delegates-mobile__table th:last-child,
+.delegates-mobile__table td:last-child {
+  text-align: center;
+}
+
+.delegates-mobile__table td {
+  padding: 8px 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #030303;
+  word-break: break-word;
+}
+
+.delegates-mobile__note {
+  margin: 16px 0 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #0a0a0a;
+}
+
+@media (max-width: 360px) {
+  .delegates-mobile__header {
+    padding: 0 16px;
+  }
+
+  .delegates-mobile__logo {
+    width: 120px;
+  }
+
+  .delegates-mobile__card {
+    padding: 32px 12px 20px;
+  }
+
+  .delegates-mobile__table th,
+  .delegates-mobile__table td {
+    padding: 8px 6px;
+    font-size: 11px;
+  }
+}
