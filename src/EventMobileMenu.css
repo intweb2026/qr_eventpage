@@ -108,7 +108,7 @@
 }
 
 .wls-menu__subtitle {
-  margin: 0 0 30px;
+  margin: 10px 0 30px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -200,11 +200,23 @@
 
 @media (min-width: 1920px) {
   .wls-menu__card {
-    width: 566px;
+    width: 502px;
     /* the base rule's max-width: calc(100% - 40px) resolves against the
        440px-capped .wls-menu__content and would otherwise clip this back
        down to 400px, so it needs raising here too */
-    max-width: 566px;
+    max-width: 502px;
+  }
+}
+
+/* only above the mobile breakpoint does the navbar have a hover dropdown
+   sitting over this card, on a short desktop window the card's own
+   vertical centering can place it high enough for that dropdown to cover
+   its top, this keeps the same centering but never lets it go above a
+   safe clearance under the header and an open dropdown */
+@media (min-width: 1025px) {
+  .wls-menu__card {
+    margin-top: max(280px, calc(50vh - 267px));
+    margin-bottom: 40px;
   }
 }
 
