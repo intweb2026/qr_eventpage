@@ -18,11 +18,11 @@ const iconLinkedin = "https://www.figma.com/api/mcp/asset/dabb6268-70aa-4d2b-82a
 // `href` are placeholders or real external links, swap in your real URLs
 // once the event data is in.
 const MENU_ITEMS = [
-  { label: "Agenda", icon: iconAgenda, href: "https://www.usa.water-leakage-summit.com/agenda" },
-  { label: "Delegate Registration List", icon: iconDelegates, to: "/delegates" },
-  { label: "Industry LinkedIn Page", icon: iconLinkedin, href: "https://www.linkedin.com/showcase/water-infra-iq-hub" },
+  { label: "Explore the Agenda", icon: iconAgenda, href: "https://www.usa.water-leakage-summit.com/agenda" },
+  { label: "Registered Attandees", icon: iconDelegates, to: "/delegates" },
+  { label: "Connect on LinkedIn ", icon: iconLinkedin, href: "https://www.linkedin.com/showcase/water-infra-iq-hub" },
   // { label: "IQ Hub LinkedIn", icon: iconLinkedin, href: "https://www.linkedin.com/company/iqhub-conferences" },
-  { label: "Visit Our Website", icon: iconGlobe, href: "https://www.usa.water-leakage-summit.com/" },
+  { label: "Visit the Event Website", icon: iconGlobe, href: "https://www.usa.water-leakage-summit.com/" },
 ];
 
 export default function EventMobileMenu() {
