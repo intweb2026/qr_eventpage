@@ -1,6 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./RegisteredDelegatesMobile.css";
-import { headerLogoDark } from "./mediaassets";
+import { headerLogoDark, backButtonBlack, backButtonBlue } from "./mediaassets";
 
 // The Figma export repeated this same 22-row set three times in a row to
 // fill the scroll length for the mock-up. That repetition isn't real content,
@@ -35,6 +36,8 @@ export default function RegisteredDelegatesMobile({
   delegates = DEFAULT_DELEGATES,
   printedOn = "21th January 2026",
 }) {
+  const navigate = useNavigate();
+
   return (
     <div className="delegates-mobile">
       <header className="delegates-mobile__header">
@@ -47,7 +50,26 @@ export default function RegisteredDelegatesMobile({
       </header>
 
       <div className="delegates-mobile__card">
-        <h1 className="delegates-mobile__title">Registered Delegates</h1>
+        <div className="delegates-mobile__title_button">
+          <button
+            type="button"
+            className="delegates-mobile__back_button"
+            aria-label="Go back"
+            onClick={() => navigate("/")}
+          >
+            <img
+              src={backButtonBlack}
+              alt=""
+              className="delegates-mobile__back_button-icon delegates-mobile__back_button-icon--normal"
+            />
+            <img
+              src={backButtonBlue}
+              alt=""
+              className="delegates-mobile__back_button-icon delegates-mobile__back_button-icon--hover"
+            />
+          </button>
+          <h1 className="delegates-mobile__title">Registered Delegates</h1>
+        </div>
 
         <div className="delegates-mobile__table-wrap">
           <table className="delegates-mobile__table">

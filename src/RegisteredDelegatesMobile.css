@@ -24,6 +24,52 @@
   height: auto;
 }
 
+.delegates-mobile__title_button {
+  /* the button is pulled out of flow and pinned to the left below, leaving
+     the title as the row's only in-flow child so its text-align: center
+     centers it against the row's full width, not just next to the button */
+  position: relative;
+}
+
+.delegates-mobile__back_button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 29px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.delegates-mobile__back_button-icon {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.15s ease;
+}
+
+.delegates-mobile__back_button-icon--hover {
+  opacity: 0;
+}
+
+.delegates-mobile__back_button:hover .delegates-mobile__back_button-icon--normal,
+.delegates-mobile__back_button:focus-visible .delegates-mobile__back_button-icon--normal {
+  opacity: 0;
+}
+
+.delegates-mobile__back_button:hover .delegates-mobile__back_button-icon--hover,
+.delegates-mobile__back_button:focus-visible .delegates-mobile__back_button-icon--hover {
+  opacity: 1;
+}
+
 .delegates-mobile__toggle {
   display: flex;
   flex-direction: column;
