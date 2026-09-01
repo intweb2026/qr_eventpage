@@ -21,8 +21,8 @@ const MENU_ITEMS = [
   { label: "Agenda", icon: iconAgenda, href: "https://www.usa.water-leakage-summit.com/agenda" },
   { label: "Delegate Registration List", icon: iconDelegates, to: "/delegates" },
   { label: "Industry LinkedIn Page", icon: iconLinkedin, href: "https://www.linkedin.com/showcase/water-infra-iq-hub" },
-  { label: "IQ Hub LinkedIn", icon: iconLinkedin, href: "https://www.linkedin.com/company/iqhub-conferences" },
-  { label: "IQ Hub Website", icon: iconGlobe, href: "https://www.iq-hub.com/" },
+  // { label: "IQ Hub LinkedIn", icon: iconLinkedin, href: "https://www.linkedin.com/company/iqhub-conferences" },
+  { label: "Visit Our Website", icon: iconGlobe, href: "https://www.usa.water-leakage-summit.com/" },
 ];
 
 export default function EventMobileMenu() {

@@ -40,14 +40,14 @@ export default function RegisteredDelegatesMobile({
 
   return (
     <div className="delegates-mobile">
-      <header className="delegates-mobile__header">
+      {/* <header className="delegates-mobile__header">
         <img src={headerLogoDark} alt="Water Leakage Summit 2026" className="delegates-mobile__logo" />
         <button type="button" className="delegates-mobile__toggle" aria-label="Toggle menu">
           <span />
           <span />
           <span />
         </button>
-      </header>
+      </header> */}
 
       <div className="delegates-mobile__card">
         <div className="delegates-mobile__title_button">
