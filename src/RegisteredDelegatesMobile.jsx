@@ -39,7 +39,16 @@ export default function RegisteredDelegatesMobile({
   const navigate = useNavigate();
 
   return (
-    <div className="delegates-mobile">
+    <div
+      className="delegates-mobile"
+      style={{
+        // CRA's CSS loader tries to resolve a url() written directly in a
+        // .css file as a module relative to src/, which fails for anything
+        // that actually lives in public/, going through an inline style
+        // instead skips that and lets the browser resolve it at runtime
+        "--delegates-bg": `url(${process.env.PUBLIC_URL}/images/WLKC-Folder-BG.png)`,
+      }}
+    >
       {/* <header className="delegates-mobile__header">
         <img src={headerLogoDark} alt="Water Leakage Summit 2026" className="delegates-mobile__logo" />
         <button type="button" className="delegates-mobile__toggle" aria-label="Toggle menu">
