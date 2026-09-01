@@ -123,7 +123,7 @@
      card caps at 440px and centers instead of stretching wider and wider
      with the page, no breakpoint needed for either behaviour */
   width: calc(100% - 40px);
-  max-width: 440px;
+  max-width: 840px;
   margin: 24px auto;
   padding: 44px 20px 24px;
   background: #ffffff;
@@ -168,18 +168,18 @@
   text-align: left;
 }
 
-.delegates-mobile__table th:last-child,
-.delegates-mobile__table td:last-child {
-  text-align: center;
-}
-
 .delegates-mobile__table td {
   padding: 8px 10px;
+  text-align: left;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 12px;
   color: #030303;
   word-break: break-word;
+}
+
+.delegates-mobile__table tbody tr:nth-child(even) {
+  background: #278dff1f;
 }
 
 .delegates-mobile__note {
