@@ -200,17 +200,7 @@
   }
 }
 
-/* only above the mobile breakpoint does the navbar have a hover dropdown
-   sitting over this card, on a short desktop window the card's own
-   vertical centering can place it high enough for that dropdown to cover
-   its top, this keeps the same centering but never lets it go above a
-   safe clearance under the header and an open dropdown */
 @media (min-width: 1025px) {
-  /* .wls-menu__card {
-    margin-top: max(280px, calc(50vh - 267px));
-    margin-bottom: 40px;
-  } */
-
   .wls-menu__label {
     font-size: 14px;
   }
@@ -247,7 +237,9 @@
     margin-left: 20px;
     margin-right: 20px;
     max-height: 530px;
-    margin-top: 105px;
+    /* margin-top was fixed at 105px here, which pinned the card near the
+       top on narrow screens instead of centering it, margin-top/bottom
+       stay auto from the base rule now, same as every other width */
   }
 
   .wls-menu__label{
@@ -265,8 +257,15 @@
   }
 
   .wls-menu__card {
-    margin-left: 16px;
-    margin-right: 16px;
+    /* fixed left/right margins here left the card's own width, still
+       capped by the base rule's max-width: calc(100% - 40px), short of
+       filling the row, and with no auto margin to absorb the remainder
+       it all landed on the right instead of splitting evenly, this caps
+       width to match the intended 16px gutter and lets margin auto-center
+       it properly, same as every other breakpoint */
+    max-width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
     padding: 24px 16px 32px;
   }
 

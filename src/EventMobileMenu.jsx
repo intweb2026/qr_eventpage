@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./EventMobileMenu.css";
-import Navbar from "./Navbar";
 import { heroVideoSrc, heroPoster } from "./mediaassets";
 
 // NOTE: these Figma asset URLs expire after about 7 days.
@@ -40,8 +39,6 @@ export default function EventMobileMenu() {
       />
 
       <div className="wls-menu__overlay" aria-hidden="true" />
-
-      <Navbar variant="transparent" />
 
       <div className="wls-menu__content">
 
