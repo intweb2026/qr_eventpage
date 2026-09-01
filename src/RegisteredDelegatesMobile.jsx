@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./RegisteredDelegatesMobile.css";
-import { headerLogoDark, backButtonBlack, backButtonBlue } from "./mediaassets";
+import { backButtonBlack, backButtonBlue } from "./mediaassets";
 
 // The Figma export repeated this same 22-row set three times in a row to
 // fill the scroll length for the mock-up. That repetition isn't real content,
