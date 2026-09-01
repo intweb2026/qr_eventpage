@@ -20,30 +20,30 @@ const NAV_ITEMS = [
   {
     name: "Event Details",
     href: `${SITE_BASE_URL}/agenda-page`,
-    dropdown: [
-      { name: "Register & Book Now", href: `${SITE_BASE_URL}/booking` },
-      { name: "Program 2026", href: `${SITE_BASE_URL}/agenda` },
-      { name: "Who Should Attend", href: `${SITE_BASE_URL}/who-should-attend` },
-    ],
+    // dropdown: [
+    //   { name: "Register & Book Now", href: `${SITE_BASE_URL}/booking` },
+    //   { name: "Program 2026", href: `${SITE_BASE_URL}/agenda` },
+    //   { name: "Who Should Attend", href: `${SITE_BASE_URL}/who-should-attend` },
+    // ],
   },
   {
     name: "Speakers",
     href: `${SITE_BASE_URL}/speakers`,
-    dropdown: [
-      { name: "Call For Presentations", href: `${SITE_BASE_URL}/speakers` },
-      { name: "Featured Speakers", href: `${SITE_BASE_URL}/featured-speakers` },
-    ],
+    // dropdown: [
+    //   { name: "Call For Presentations", href: `${SITE_BASE_URL}/speakers` },
+    //   { name: "Featured Speakers", href: `${SITE_BASE_URL}/featured-speakers` },
+    // ],
   },
   { name: "Sponsors", href: `${SITE_BASE_URL}/sponsors` },
   { name: "Venue", href: `${SITE_BASE_URL}/venue` },
   {
     name: "Resources",
     href: `${SITE_BASE_URL}/news`,
-    dropdown: [
-      { name: "Latest News", href: `${SITE_BASE_URL}/news` },
-      { name: "Media Partners", href: `${SITE_BASE_URL}/media-partners` },
-      { name: "FAQ", href: `${SITE_BASE_URL}/faq` },
-    ],
+    // dropdown: [
+    //   { name: "Latest News", href: `${SITE_BASE_URL}/news` },
+    //   { name: "Media Partners", href: `${SITE_BASE_URL}/media-partners` },
+    //   { name: "FAQ", href: `${SITE_BASE_URL}/faq` },
+    // ],
   },
   { name: "Contact Us", href: `${SITE_BASE_URL}/contact-us` },
 ];
@@ -187,10 +187,7 @@ const Navbar = ({ disableScrollEffect = false, forceScrolled = false, variant })
                             <path d="M8 1 3 6l5 5" stroke="currentColor" strokeWidth="1.5" />
                           </svg>
                         </a>
-                        {/* a plain div, not an anchor, both the label link and
-                            the sub links below are real anchors, and nesting
-                            an <a> inside another <a> is invalid HTML that
-                            breaks click targets */}
+
                         <div className="navbar-active-label">
                           <a href={item.href} {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
                             {item.name}
