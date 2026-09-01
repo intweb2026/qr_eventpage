@@ -217,6 +217,10 @@
     margin-left: 16px;
   }
 
+  .wls-menu__label {
+    font-size: 14px;
+  }
+
   .wls-menu__card {
     width: auto;
     margin-left: 20px;
