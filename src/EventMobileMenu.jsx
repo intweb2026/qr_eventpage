@@ -19,7 +19,7 @@ const iconLinkedin = "https://www.figma.com/api/mcp/asset/dabb6268-70aa-4d2b-82a
 // once the event data is in.
 const MENU_ITEMS = [
   { label: "Explore the Agenda", icon: iconAgenda, href: "https://www.usa.water-leakage-summit.com/agenda" },
-  { label: "Registered Attandees", icon: iconDelegates, to: "/delegates" },
+  { label: "Registered Attendees", icon: iconDelegates, to: "/delegates" },
   { label: "Connect on LinkedIn ", icon: iconLinkedin, href: "https://www.linkedin.com/showcase/water-infra-iq-hub" },
   // { label: "IQ Hub LinkedIn", icon: iconLinkedin, href: "https://www.linkedin.com/company/iqhub-conferences" },
   { label: "Visit the Event Website", icon: iconGlobe, href: "https://www.usa.water-leakage-summit.com/" },

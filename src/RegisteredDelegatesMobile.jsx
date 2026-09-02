@@ -34,7 +34,7 @@ const DEFAULT_DELEGATES = [
 
 export default function RegisteredDelegatesMobile({
   delegates = DEFAULT_DELEGATES,
-  printedOn = "21th January 2026",
+  printedOn = "21st January 2026",
 }) {
   const navigate = useNavigate();
 
@@ -100,9 +100,7 @@ export default function RegisteredDelegatesMobile({
         </div>
 
         <p className="delegates-mobile__note">
-          This registered attendee list was printed on {printedOn}. Any participants registered
-          after this date would not be listed in the paper version. The updated list will be made
-          available online and will include all participants.
+          This registered attendee list was printed on {printedOn}. Any participants registered after this date would not be included in this list. The updated list will be available online and will include all registered participants.
         </p>
       </div>
     </div>
