@@ -77,7 +77,7 @@ export default function RegisteredDelegatesMobile({
               className="delegates-mobile__back_button-icon delegates-mobile__back_button-icon--hover"
             />
           </button>
-          <h1 className="delegates-mobile__title">Registered Delegates</h1>
+          <h1 className="delegates-mobile__title">Registered Attendees</h1>
         </div>
 
         <div className="delegates-mobile__table-wrap">
