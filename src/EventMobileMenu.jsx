@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import "./EventMobileMenu.css";
 import { heroVideoSrc, heroPoster } from "./mediaassets";
 
-// NOTE: these Figma asset URLs expire after about 7 days.
-// Download the files and move them into your own /public or /assets
-// folder before this ships, then swap these constants for local imports.
-const titleLockup = "https://www.figma.com/api/mcp/asset/baacb20a-8ad5-42f1-bd2c-eeccbcb1b764.svg";
+// titleLockup now points at the local copy in public/images, the rest below
+// are still the expiring Figma asset URLs, download and move them into
+// /public or /assets before this ships, then swap these constants too.
+const titleLockup = "/images/Logo.png";
 const forwardIcon = "https://www.figma.com/api/mcp/asset/9f9f43bd-6e44-4b0a-87e5-242f06bf46dd.png";
 
 const iconAgenda = "https://www.figma.com/api/mcp/asset/b57508fb-d6ec-419f-a97f-65ae5cf51f7f.png";

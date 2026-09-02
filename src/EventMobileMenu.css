@@ -192,11 +192,50 @@
 
 @media (min-width: 1920px) {
   .wls-menu__card {
-    width: 502px;
+    width: 548.56px;
+    height: 770px;
     /* the base rule's max-width: calc(100% - 40px) resolves against the
        440px-capped .wls-menu__content and would otherwise clip this back
        down to 400px, so it needs raising here too */
-    max-width: 502px;
+    max-width: 548.56px;
+    /* 22.78px left/right centers the 503px items inside the 548.56px card.
+       57.89px/58.81px top/bottom is 63px/64px (this card's old padding,
+       Figma node 2089:17760) scaled by 0.918855, the same ratio the new
+       770px height is of the old 838px, so the stack of title, tagline and
+       buttons still keeps its proportions inside the shorter card */
+    padding: 57.89px 22.78px 58.81px;
+  }
+
+  .wls-menu__title {
+    width: 312.41px;
+    height: 143.34px;
+  }
+
+  .wls-menu__subtitle {
+    font-size: 24px;
+    line-height: 25px;
+    /* 39.51px above, 38.59px below, the previous 43px/42px gaps scaled by
+       the same 0.918855 ratio as the card height */
+    margin: 39.51px 0 38.59px;
+  }
+
+  .wls-menu__item {
+    width: 503px;
+    height: 62.48px;
+    /* the previous 35px gap scaled by the same 0.918855 ratio */
+    margin-bottom: 32.16px;
+  }
+
+  .wls-menu__link {
+    width: 503px;
+    height: 62.48px;
+  }
+
+  /* .wls-menu__card scopes this so it outranks the later, equally
+     specific .wls-menu__label rule in the 1025px breakpoint below,
+     which would otherwise also match at 1920px and win by source order */
+  .wls-menu__card .wls-menu__label {
+    font-size: 20px;
   }
 }
 
