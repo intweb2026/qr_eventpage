@@ -13,7 +13,7 @@ const iconLinkedin = "/images/Linkedin.png";
 
 const MENU_ITEMS = [
   { label: "Explore the Agenda", icon: iconAgenda, href: process.env.REACT_APP_AGENDA_URL },
-  { label: "Registered Attendees", icon: iconDelegates, to: "/delegates" },
+  { label: "Registered Attendees", icon: iconDelegates, to: "/registered-attendees" },
   { label: "Connect on LinkedIn ", icon: iconLinkedin, href: process.env.REACT_APP_LINKEDIN_URL },
   { label: "Visit the Event Website", icon: iconGlobe, href: process.env.REACT_APP_EVENT_WEBSITE_URL },
 ];
