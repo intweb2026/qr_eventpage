@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import "./EventMobileMenu.css";
 import { heroVideoSrc, heroPoster } from "./mediaassets";
 
-// titleLockup now points at the local copy in public/images, the rest below
-// are still the expiring Figma asset URLs, download and move them into
-// /public or /assets before this ships, then swap these constants too.
 const titleLockup = "/images/Logo.png";
 const forwardIcon = "https://www.figma.com/api/mcp/asset/9f9f43bd-6e44-4b0a-87e5-242f06bf46dd.png";
 
@@ -14,14 +11,10 @@ const iconDelegates = "https://www.figma.com/api/mcp/asset/a1bb2a06-cce2-4775-b5
 const iconGlobe = "https://www.figma.com/api/mcp/asset/78ef1da4-9d5f-4e23-8333-6be93d1c0b4d.png";
 const iconLinkedin = "https://www.figma.com/api/mcp/asset/dabb6268-70aa-4d2b-82a3-8c0746a965e2.png";
 
-// Items with `to` route inside the app (react-router Link). Items with
-// `href` are placeholders or real external links, swap in your real URLs
-// once the event data is in.
 const MENU_ITEMS = [
   { label: "Explore the Agenda", icon: iconAgenda, href: "https://www.usa.water-leakage-summit.com/agenda" },
   { label: "Registered Attendees", icon: iconDelegates, to: "/delegates" },
   { label: "Connect on LinkedIn ", icon: iconLinkedin, href: "https://www.linkedin.com/showcase/water-infra-iq-hub" },
-  // { label: "IQ Hub LinkedIn", icon: iconLinkedin, href: "https://www.linkedin.com/company/iqhub-conferences" },
   { label: "Visit the Event Website", icon: iconGlobe, href: "https://www.usa.water-leakage-summit.com/" },
 ];
 

@@ -194,15 +194,7 @@
   .wls-menu__card {
     width: 548.56px;
     height: 770px;
-    /* the base rule's max-width: calc(100% - 40px) resolves against the
-       440px-capped .wls-menu__content and would otherwise clip this back
-       down to 400px, so it needs raising here too */
     max-width: 548.56px;
-    /* 22.78px left/right centers the 503px items inside the 548.56px card.
-       57.89px/58.81px top/bottom is 63px/64px (this card's old padding,
-       Figma node 2089:17760) scaled by 0.918855, the same ratio the new
-       770px height is of the old 838px, so the stack of title, tagline and
-       buttons still keeps its proportions inside the shorter card */
     padding: 57.89px 22.78px 58.81px;
   }
 
@@ -214,15 +206,12 @@
   .wls-menu__subtitle {
     font-size: 24px;
     line-height: 25px;
-    /* 39.51px above, 38.59px below, the previous 43px/42px gaps scaled by
-       the same 0.918855 ratio as the card height */
     margin: 39.51px 0 38.59px;
   }
 
   .wls-menu__item {
     width: 503px;
     height: 62.48px;
-    /* the previous 35px gap scaled by the same 0.918855 ratio */
     margin-bottom: 32.16px;
   }
 
@@ -231,9 +220,6 @@
     height: 62.48px;
   }
 
-  /* .wls-menu__card scopes this so it outranks the later, equally
-     specific .wls-menu__label rule in the 1025px breakpoint below,
-     which would otherwise also match at 1920px and win by source order */
   .wls-menu__card .wls-menu__label {
     font-size: 20px;
   }
@@ -276,9 +262,6 @@
     margin-left: 20px;
     margin-right: 20px;
     max-height: 530px;
-    /* margin-top was fixed at 105px here, which pinned the card near the
-       top on narrow screens instead of centering it, margin-top/bottom
-       stay auto from the base rule now, same as every other width */
   }
 
   .wls-menu__label{
@@ -296,12 +279,6 @@
   }
 
   .wls-menu__card {
-    /* fixed left/right margins here left the card's own width, still
-       capped by the base rule's max-width: calc(100% - 40px), short of
-       filling the row, and with no auto margin to absorb the remainder
-       it all landed on the right instead of splitting evenly, this caps
-       width to match the intended 16px gutter and lets margin auto-center
-       it properly, same as every other breakpoint */
     max-width: calc(100% - 32px);
     margin-left: auto;
     margin-right: auto;

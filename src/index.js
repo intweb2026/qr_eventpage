@@ -4,10 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import EventMobileMenu from "./EventMobileMenu";
 import RegisteredDelegatesMobile from "./RegisteredDelegatesMobile";
-
-// Route map: menu screen at "/", "Delegate Registration List" there goes
-// straight to "/delegates" now, no login step in between. LoginPageMobile.jsx
-// is still in the project if you want it back, just not wired into a route.
 function App() {
   return (
     <Routes>
