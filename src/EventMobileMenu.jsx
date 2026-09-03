@@ -4,18 +4,18 @@ import "./EventMobileMenu.css";
 import { heroVideoSrc, heroPoster } from "./mediaassets";
 
 const titleLockup = "/images/Logo.png";
-const forwardIcon = "https://www.figma.com/api/mcp/asset/9f9f43bd-6e44-4b0a-87e5-242f06bf46dd.png";
+const forwardIcon = "/images/forward_icon.png";
 
-const iconAgenda = "https://www.figma.com/api/mcp/asset/b57508fb-d6ec-419f-a97f-65ae5cf51f7f.png";
-const iconDelegates = "https://www.figma.com/api/mcp/asset/a1bb2a06-cce2-4775-b50d-ca811f461c92.png";
-const iconGlobe = "https://www.figma.com/api/mcp/asset/78ef1da4-9d5f-4e23-8333-6be93d1c0b4d.png";
-const iconLinkedin = "https://www.figma.com/api/mcp/asset/dabb6268-70aa-4d2b-82a3-8c0746a965e2.png";
+const iconAgenda = "/images/Agenda_icon.png";
+const iconDelegates = "/images/Registration%20icon.png";
+const iconGlobe = "/images/Web.png";
+const iconLinkedin = "/images/Linkedin.png";
 
 const MENU_ITEMS = [
-  { label: "Explore the Agenda", icon: iconAgenda, href: "https://www.usa.water-leakage-summit.com/agenda" },
+  { label: "Explore the Agenda", icon: iconAgenda, href: process.env.REACT_APP_AGENDA_URL },
   { label: "Registered Attendees", icon: iconDelegates, to: "/delegates" },
-  { label: "Connect on LinkedIn ", icon: iconLinkedin, href: "https://www.linkedin.com/showcase/water-infra-iq-hub" },
-  { label: "Visit the Event Website", icon: iconGlobe, href: "https://www.usa.water-leakage-summit.com/" },
+  { label: "Connect on LinkedIn ", icon: iconLinkedin, href: process.env.REACT_APP_LINKEDIN_URL },
+  { label: "Visit the Event Website", icon: iconGlobe, href: process.env.REACT_APP_EVENT_WEBSITE_URL },
 ];
 
 export default function EventMobileMenu() {
@@ -64,7 +64,7 @@ export default function EventMobileMenu() {
                     <a
                       href={item.href}
                       className="wls-menu__link"
-                      {...(item.href.startsWith("http")
+                      {...(item.href?.startsWith("http")
                         ? { target: "_blank", rel: "noopener noreferrer" }
                         : {})}
                     >
