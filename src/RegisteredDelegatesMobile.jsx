@@ -131,7 +131,7 @@ export default function RegisteredDelegatesMobile({
         </div>
 
         <p className="delegates-mobile__note">
-          This registered attendee list was printed on {printedOn}. Any participants registered after this date would not be listed in the paper version. The updated list will be made available online and will include all participants.
+          This attendee list was last updated on {printedOn}. Registrations received after this date are not included. The latest list will be available online and will include all registered participants.
         </p>
       </div>
     </div>

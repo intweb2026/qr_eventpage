@@ -8,7 +8,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<EventMobileMenu />} />
-      <Route path="/delegates" element={<RegisteredDelegatesMobile />} />
+      <Route path="/registered-attendees" element={<RegisteredDelegatesMobile />} />
     </Routes>
   );
 }
